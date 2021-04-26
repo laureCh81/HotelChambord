@@ -1,0 +1,146 @@
+﻿/* ======== date picker popup styles ======== */
+.DialogInsightDatePicker { 
+	position: absolute; padding: 100px; z-index: 6000;
+	background-image: url(https://cdn.dialoginsight.com/DI/Forms/resources/emptyimagetoworkaroundiebug.gif);
+}
+.DialogInsightDatePickerContent { background-color: white; border: 1px solid #bbbbbb; padding: 6px; font-family: Arial, sans-serif; font-size: 13px; }
+.DialogInsightDatePickerHeader { text-align: center; font-weight: bold; margin-bottom: 5px; font-size: 15px; position: relative; vertical-align: middle; height: 30px; line-height: 30px; }
+.DialogInsightDatePickerHeader .DialogInsightDatePickerPrev { position: absolute; padding: 5px; left: 0px; top: 2px; cursor: pointer; width: 15px; height: 15px; text-align: center; line-height: 15px; }
+.DialogInsightDatePickerHeader .DialogInsightDatePickerNext { position: absolute; padding: 5px; right: 0px; top: 2px; cursor: pointer; width: 15px; height: 15px; text-align: center; line-height: 15px; }
+table.DialogInsightDatePickerMonthTbl { table-layout: fixed; border-collapse: separate; border-spacing: 4px; }
+table.DialogInsightDatePickerMonthTbl th  { width: 26px; padding: 4px; text-align: center; font-weight: bold; }
+table.DialogInsightDatePickerMonthTbl td { width: 26px; padding: 4px 6px 4px 2px; text-align: right; cursor: pointer; }
+table.DialogInsightDatePickerMonthTbl td:hover { background-color: #F2F2F2; }
+table.DialogInsightDatePickerMonthTbl td.OutOfMonth { color: #999999; }
+table.DialogInsightDatePickerMonthTbl td.SelectedDate { background-color: #009900; color: white; font-weight: bold; }
+table.DialogInsightDatePickerMonthTbl td.Today { font-weight: bold; }
+.DialogInsightDatePickerFooter { padding: 5px; text-align: right; }
+.DialogInsightDatePickerCloseBtn { background-color: #bbbbbb; color: black; padding: 5px 10px; display: inline-block; cursor: pointer; }
+.DialogInsightTimePickerContainer { float: left; }
+.DialogInsightTimePickerTxtbox { height: 15px; padding: 5px; box-sizing: content-box; width: 70px; margin-right: 10px; border: 1px solid #999999; }
+.DialogInsightTimePickerTxtbox.Error { border: 1px solid #990000; color: #550000; }
+div.DialogInsightDatePickerMonth { height: 19px; display: inline-block; line-height: 19px; vertical-align: middle; position: relative; top: -1px; }
+input.DialogInsightDatePickerYear { 
+	padding: 0px; width: 45px; margin: 0px 0px 0px 7px; vertical-align: middle; font-size: 15px; height: 19px; font-weight: bold; 
+	border: 1px transparent; font-family: Arial, sans-serif; position: relative; top: -1px; padding: 0px; text-align: center; line-height: normal;
+}
+/* ======== lightbox styles ======== */
+div.DialogInsightLightBoxBackground {
+	position: absolute; left: 0px; top: 0px; bottom: 0px; right: 0px; width: 100%; height: 100%; z-index: 5000;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+div.DialogInsightLightBoxBackground.DialogInsightLightBoxBackground_OldIE {
+	background-image: url(https://cdn.dialoginsight.com/DI/Forms/resources/PopupBgBlockerOlderIE.png);
+}
+div.DialogInsightLightBox {
+	margin-left: -300px;
+	padding: 15px 0px 15px 15px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px #555555;
+	background-color: white;
+	position: absolute; left: 50%; top: 50px; z-index: 5001;
+}
+div.DialogInsightLightBoxCloseButton {
+	position: absolute; right: -18px; top: -18px;
+	width:35px; height:35px;
+	background-image: url(https://cdn.dialoginsight.com/DI/Forms/resources/LightboxClose.png);
+	cursor: pointer;
+}
+
+/* ======== form styles ======== */
+.DialogInsightFormDiv { 
+	line-height: normal; word-wrap: normal; white-space: normal; position: relative; 
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px;
+}
+.DialogInsightFormDiv label { vertical-align: middle; margin: 2px 8px 0px 2px; display: inline-block; position: relative; top: 3px; }
+.DialogInsightFormDiv.DialogInsightLoading > * { visibility: hidden; }
+.DialogInsightFormDiv.DialogInsightLoading {
+	background-image: url(https://cdn.dialoginsight.com/DI/Forms/resources/AjaxBlackLoader.gif);
+	background-repeat: no-repeat; background-position: center center;
+}
+div.DialogInsightFormContainer { text-align: left; }
+div.DialogInsightInputContainer { display: inline-block; vertical-align: top; min-height: 32px; width: 300px; }
+div.DialogInsightFormRow { padding-bottom: 10px; }
+div.DialogInsightLabel_LeftOfField { 
+	display: inline-block; text-align: left; width: 250px; vertical-align: top; 
+	padding-top: 7px; overflow: hidden; text-overflow: ellipsis; 
+}
+div.DialogInsightLabel_AboveField { padding-bottom: 2px; }
+.DialogInsightFieldDescription { font-style: italic; color: #666666; }
+.DialogInsightFormCategoryTitle { font-weight: bold; position: relative; height: 18px; padding-bottom: 5px; }
+.DialogInsightFormCategoryTitleWithMargin { margin-top: 15px; }
+.DialogInsightFormCategoryTitle > span { position: absolute; left: 0px; top: 0px; white-space: nowrap; }
+.DialogInsightFormCategoryDescription { position: relative; height: 18px; }
+.DialogInsightFormCategoryDescription > span { position: absolute; left: 0px; top: 0px; white-space: nowrap; }
+
+/* Input controls */
+input[type=text].DialogInsightFormInput, select.DialogInsightFormInput, textarea.DialogInsightFormInput { 
+	width: 300px; height: 32px; box-sizing: border-box; padding: 0px 12px; line-height: 32px; color: #555555;
+	background-color: #ffffff; background-image: none; border: 1px solid #cccccc; border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0DialogInsightFormInput, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.DialogInsightFormDiv input[type=radio], .DialogInsightFormDiv input[type=checkbox] {
+	vertical-align: middle; margin: 3px 0px 0px 0px; position: relative; top: 3px;
+}
+select.DialogInsightFormInput { padding-top: 4px; padding-bottom: 4px; }
+select.DialogInsightFormInput::-ms-expand { border: 0px none; background-color: white; }
+select.DialogInsightFormInput:focus::-ms-value { background: transparent; color: #444444; }
+textarea.DialogInsightFormInput { height: 80px; resize: none; padding-top: 4px; padding-bottom: 4px; line-height: normal; }
+input[type=text].DialogInsightFormInput::-ms-clear { width: 0px; height: 0px; }
+input[type=text].DialogInsightFormInput:focus, select.DialogInsightFormInput:focus, textarea.DialogInsightFormInput:focus { 
+	border-color: #66afe9; outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+input[type=text].DialogInsightFormInput.DialogInsightFormInputDate { width: 100px; }
+img.DialogInsightFormInputDatePickerIcon { width: 18px; height: 18px; cursor: pointer; position: absolute; left: 105px; top: 6px; }
+input[type=text].DialogInsightFormInput.DialogInsightFormInputDateTime { width: 140px; }
+img.DialogInsightFormInputDateTimePickerIcon { width: 18px; height: 18px; cursor: pointer; position: absolute; left: 145px; top: 6px; }
+.DialogInsightDatePlaceholder { width: 75px; }
+.DialogInsightDateTimePlaceholder { width: 115px; }
+
+/* Errors */
+.DialogInsightErrorContents { color: #ff3333; padding-top: 2px; padding-bottom: 2px; }
+.DialogInsightGlobalErrors > div { 
+	text-align: left; border-radius: 5px; background-color: #eeeeee; border: #ff3333 1px solid; 
+	padding: 10px; color:#ff3333; max-width:500px; margin-bottom: 10px;
+}
+input[type=text].DialogInsightFieldInError, textarea.DialogInsightFieldInError { border-color: #990000; color: #660000; }
+input[type=text].DialogInsightFieldInError:focus, textarea.DialogInsightFieldInError:focus { color: #555555; }
+select.DialogInsightFieldInError { border-color: #990000; color: #660000; }
+.DialogInsightUnselectable { 
+	-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; 
+	-ms-user-select: none; -o-user-selectE: none; user-select: none; 
+}
+
+/* Simulated placeholders (input cue) */
+div.DialogInsightInputWithPlaceholderContainer { position: relative; height: 32px; }
+div.DialogInsightTextareaWithPlaceholderContainer { height: 80px; }
+div.DialogInsightInputWithPlaceholderContainer .DialogInsightInputPlaceholderText {
+	position: absolute; top: 8px; left: 13px; z-index: 1; color: #9f9f9f; pointer-events: none;
+	overflow: hidden; display: inline-block; white-space: nowrap; max-width: 275px;
+}
+div.DialogInsightInputWithPlaceholderContainer input.DialogInsightInputWithPlaceholder,
+div.DialogInsightInputWithPlaceholderContainer textarea.DialogInsightInputWithPlaceholder {
+	position:absolute; left: 0px; top: 0px; with: 100%; z-index: 10; background-color: transparent;
+	background-image: url(https://cdn.dialoginsight.com/DI/Forms/resources/emptyimagetoworkaroundiebug.gif);
+}
+.DialogInsightInputWithPlaceholderContainer.PlaceholderInputHasText .DialogInsightInputPlaceholderText { display: none; }
+
+/* Submit button */
+.DialogInsightFormSubmit input[type=submit] { 
+	vertical-align: middle; display: inline-block; margin-bottom: 0; font-weight: normal; text-align: center;
+	vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent;
+	white-space: nowrap; padding: 6px 12px; font-size: 14px; border-radius: 4px;
+	-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+	color: #ffffff; background-color: #337ab7; border-color: #2e6da4;
+}
+.DialogInsightFormSubmit input[type=submit]:disabled { background-color: #CCCCCC; border-color: #CCCCCC; }
+.DialogInsightFormSubmit .DialogInsightFormSubmitLoader { visibility: hidden; margin-left: 5px; vertical-align: middle; }
+.DialogInsightFormSubmit.DialogInsightFormSubmitInProgress .DialogInsightFormSubmitLoader { visibility: visible !important; }
+
+
