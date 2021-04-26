@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+a img {border: none;}
+div.mod_actuclair {
+    margin: 5px 3px 0 0;
+    width:145px;
+    padding: 0;
+    text-align: left;
+    background: #fff;
+}
+
+.btn_actuclair {
+    width:160px;
+    font-size:18px; 
+    color: #6C5E57;
+    display: inline-block;
+}
+.btn_actuclair span {
+    display: inline-block;
+    width:160px;
+    padding: 5px 5px 5px 0;
+    font-family:'Roboto Condensed', sans-serif;
+    line-height: 1;
+   /* font-weight:bold;*/
+    background: #FFF ;
+    color: #6C5E57;
+}
+.btn_actuclair:active, .btn_actuclair:active span  {}
+
+.button, a.button:link {
+    font-family:'Roboto Condensed', sans-serif;
+    font-size:18px;
+    /*font-weight:bold;*/
+    padding:5px;margin-bottom:5px; color:#000; text-align:left;
+    background-color:#fedae1;
+}
+
+.button_active, a.button_active:link {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: #000;
+        text-align: left;
+    background-color: #fff;
+	border: 1px solid #fedae1;
+}
+.button_active2, a.button_active2:link {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    padding: 5px 3px 5px 5px;
+    margin-bottom: 5px;
+    color: #000;
+        text-align: left;
+    background-color: #fff;
+	border-left: 1px solid #fedae1;
+	border-right: 1px solid #fedae1;
+
+}
+.button:hover {
+    
+    background-color:#fff;
+	border: 1px solid #fedae1;
+}
+.button:active {
+    position:relative;
+    top:1px;
+}
+.button span,.button_active span,.button_active2 span{
+    display: inline-block;
+    width:160px;
+    color: #000;
+    padding: 5px 5px 5px 0;
+    font-family:'Roboto Condensed', sans-serif;
+    line-height: 1;
+    font-size:16px;
+    /*font-weight:bold;*/
+}
+.button_etoiles {
+    width:150px;
+    font-family:arial;
+    font-size:18px;
+    /*font-weight:bold;*/
+    padding:15px 5px 5px 5px;
+    margin-bottom:5px; color:#FFF; text-align:center;
+    background-color:#fedae1;
+}
+
+.button_etoiles span {
+    display: inline-block;
+    /*width:120px;*/
+    width:160px;
+    color: #fff;
+    padding: 5px 5px 5px 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1;
+    font-size:13px;
+    /*font-weight:bold; */
+}

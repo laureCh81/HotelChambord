@@ -1,0 +1,139 @@
+.hero {
+	width:175px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0;
+	margin-right:10px;
+	}
+	
+	.hero-carousel article {
+		
+		width:175px;
+		margin: 0 auto;
+		height:145px;
+		display: block;
+		float: left;
+		position: relative;
+		}
+				
+	.hero-carousel-container article {
+		float: left;
+		}
+	
+		/*.hero-carousel article img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			}*/
+			
+		.hero-carousel article .contents {
+			position: relative;
+			z-index: 2;
+			top: 5px;
+			left: 5px;
+			list-style: none;
+			color: #666;
+			
+			width:175px;
+			padding: 5px;
+			
+			/*background: rgba(255,255,255,0.8);
+			-pie-background: rgba(255,255,255,0.8);*/
+			
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 20px;
+			border-radius: 20px;
+			
+			behavior: url(assets/PIE.htc);
+			}
+	.hero-carousel-nav {
+			width: 150px;
+			position: absolute;
+			bottom: 0;
+			left: 20%;
+			margin-left: -10px;
+			z-index: 2;
+			}
+			
+			.hero-carousel-nav li {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				list-style: none;
+				}
+				
+			.hero-carousel-nav li.prev {
+				left: 10px;
+				right: auto;
+				}
+				
+			.hero-carousel-nav li a {
+				/*background: #FFF;*/
+				color: #fff;
+				border: none;
+				outline: none;
+				display: block;
+				float: left;
+				padding: 5px 20px;
+				
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				border-radius: 20px;
+				behavior: url(assets/PIE.htc);
+				}
+			
+			.hero-carousel-nav li a:hover { 
+				background: #FFF;
+				}
+				
+			.hero-carousel-nav li a:active,
+			.hero-carousel-nav li a:focus { 
+				border: none;
+				outline: none;
+				}
+		/*.hero-carousel-nav {
+			width: 450px;
+			position: absolute;
+			bottom: 0;
+			left: 20%;
+			margin-left: -10px;
+			z-index: 2;
+			}
+			
+			.hero-carousel-nav li {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				list-style: none;
+				}
+				
+			.hero-carousel-nav li.prev {
+				left: 10px;
+				right: auto;
+				}
+				
+			.hero-carousel-nav li a {
+				background: #D21034;
+				color: #fff;
+				border: none;
+				outline: none;
+				display: block;
+				float: left;
+				padding: 5px 20px;
+				
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				border-radius: 20px;
+				behavior: url(assets/PIE.htc);
+				}
+			
+			.hero-carousel-nav li a:hover { 
+				background: #89051C;
+				}
+				
+			.hero-carousel-nav li a:active,
+			.hero-carousel-nav li a:focus { 
+				border: none;
+				outline: none;
+				}*/
