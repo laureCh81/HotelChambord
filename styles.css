@@ -92,7 +92,10 @@ h1 {
     text-transform: uppercase;
     line-height: 1.2em;
 }
-
+h5 {
+    color: #bfa764;
+    font-family: 'Simonetta',Georgia,serif;
+}
 .conteneur {
     margin: 0 auto;
     
@@ -105,15 +108,26 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    
 }
 
-#header .conteneur{
-    display: flex;
-    align-items: baseline;   
-    flex-wrap: nowrap;    
-    width: 100%; 
-} 
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-toggler{
+color: rgba(255,255,255);
 
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+    color: #bfa764;
+}
+
+.navbar-collapse{
+  justify-content: center;  
+  flex-wrap: nowrap;
+}
+
+.resa a.button{
+    border: solid 1px #bfa764; 
+}
 
 /* Button */
 
@@ -158,15 +172,43 @@ input[type="button"]:active,
     background-color: rgba(144, 144, 144, 0.5);
 }
 
-.navbar-dark .navbar-nav .nav-link,
-.navbar-dark .navbar-toggler{
-color: rgba(255,255,255,.75);
+/* FOOTER */
+footer {
+    display: block;
 }
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
-    color: #bfa764;
+footer div{
+    align-items: baseline;
+   
 }
 
-.navbar-collapse{
-  justify-content: center;  
-  flex-wrap: nowrap;
+ul.list-unstyled li span,
+ul.list-unstyled li a,
+ul.legals li a{
+    color: white;    
+}
+
+ul.list-unstyled li a:hover,
+ul.list-unstyled li i,
+ul.legals li a:hover,
+ul.legals li i{
+    color: #bfa764;    
+}
+
+footer .row {
+  align-items: center;  
+}
+
+li.d-inline{
+    margin-right: 1em;
+    justify-content: space-around;
+}
+
+footer .button{
+    border: solid 1px #bfa764;
+    justify-content: flex-end;
+}
+
+footer form .button{
+    display: flex;
+    justify-content: flex-end;
 }
