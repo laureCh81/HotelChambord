@@ -129,6 +129,8 @@ color: rgba(255,255,255);
     border: solid 1px #bfa764; 
 }
 
+
+
 /* Button */
 
 input[type="submit"],
@@ -146,7 +148,7 @@ input[type="button"],
 	font-weight: 700;
 	height: 2.5em;
 	letter-spacing: 0.225em;
-	line-height: 3.125em;
+	line-height: 2.3em;
 	max-width: 30em;
     padding: 0 5px 0 5px;
 	text-align: center;
@@ -208,7 +210,6 @@ footer .button{
     justify-content: flex-end;
 }
 
-footer form .button{
-    display: flex;
-    justify-content: flex-end;
+.separate{
+    margin-right: 2em;
 }
