@@ -116,12 +116,85 @@
 
 <!-- Footer -->
 <footer class="bg-dark text-center text-lg-start">
-    <!-- Newletter -->
+    <!-- Newletter & contacts -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">        
-        <a class="button separate" href="">S'inscrire à la Newletter</a>
-        <a class="button" href="">Nous contacter</a>
+        <button id="newletter" class="button separate" data-toggle="modal" data-target="#modalNew" >S'inscrire à la Newletter</button>
+        <button id="contact" class="button" data-toggle="modal" data-target="#modalContact"  >Nous contacter</button>
+    </div>
+      <!-- Newletter -->
+      <!-- Modal News -->
+    <div class="modal fade" id="modalNew" tabindex="-1" role="dialog"  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="titreModalNews">Inscription à la Newsletter</h4>
+        <p>Recevez les dernières actualités et découvrez les événements de l'hôtel Chambord</p> 
       </div>
-      <!-- Copyright -->
+      <div class="modal-body">
+        <div class="form-row">
+            <div class="form-group col-12 col-lg-5">
+                <label for="prenomNews">Prenom</label>
+                <input type="text" class="form-control" name="name" id="prenomNews" placeholder="Votre prenom" />
+            </div>
+            <div class="form-group col-12 col-lg-6">
+                <label for="nomNews">Nom</label>
+                <input type="text" class="form-control" name="name" id="nomNews" placeholder="Votre nom" />
+            </div>             
+            <div class="form-group col-12">
+                <label for="mailNews">Adresse email</label>
+                <input type="email" class="form-control" id="mailNews" placeholder="Votre adresse email">
+              </div>         
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="button" data-dismiss="modal">Fermer</button>
+        <button type="submit" class="button">Inscription</button>
+      </div>
+    </div>
+  </div>
+</div>
+     <!-- Modal News -->
+     <!-- Modal Contact -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="titreModalContact">Contactez-nous</h4>
+              <p>Une question, une remarque, nous vous répondrons dans les plus brefs délais.</p> 
+            </div>
+            <div class="modal-body">
+              <div class="form-row">
+                  <div class="form-group col-12 col-lg-5">
+                      <label for="prenomContact">Prenom</label>
+                      <input type="text" class="form-control" name="name" id="prenomContact" placeholder="Votre prenom" />
+                  </div>
+                  <div class="form-group col-12 col-lg-6">
+                      <label for="nomContact">Nom</label>
+                      <input type="text" class="form-control" name="name" id="nomContact" placeholder="Votre nom" />
+                  </div>             
+                  <div class="form-group col-12">
+                      <label for="mailContact">Adresse email</label>
+                      <input type="email" class="form-control" id="mailContact" placeholder="Votre adresse email">
+                    </div>  
+                    <div class="form-group col-12">
+                        <label for="txtContact">Votre message</label>
+                        <textarea class="form-control" id="txtContact" placeholder="Texte libre"></textarea>
+                      </div>           
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="button" data-dismiss="modal">Fermer</button>
+              <button type="submit" class="button">Inscription</button>
+            </div>
+          </div>
+        </div>
+      </div>
+ <!-- Modal Contact -->
+
+
+
+
+
     <!-- Grid container -->
     <div class="align-content-center container-fluid">
       <!--Grid row-->
@@ -170,11 +243,9 @@
         </div>
         <!--Grid column-->
         <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0"></h5>
-    
-            <form class="flex-nowrap form-inline" action="/action_page.php">
-                <input class=" form-control mt-md-4 mr-sm-1" type="text" placeholder="Saisissez votre recherche">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">      
+            <form class="form-inline" action="#recherche">
+                <input class="form-control mt-md-4 mr-sm-1" type="text" placeholder="Saisissez votre recherche">
                 <button class="button" type="submit">Recherche</button>
               </form>
           </div>
@@ -200,7 +271,7 @@
   </footer>
   <!-- Footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
    

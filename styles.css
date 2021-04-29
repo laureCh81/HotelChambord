@@ -92,7 +92,7 @@ h1 {
     text-transform: uppercase;
     line-height: 1.2em;
 }
-h5 {
+h2, h3, h4, h5, h6 {
     color: #bfa764;
     font-family: 'Simonetta',Georgia,serif;
 }
@@ -213,3 +213,25 @@ footer .button{
 .separate{
     margin-right: 2em;
 }
+
+/* MODAL */
+
+.modal-header{
+    flex-direction: column;    
+}
+.modal-content{    
+    background-color: rgb(49, 47, 47);
+    color: white;
+}
+.modal-body{
+    width: 100%;
+}
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ .form-row label:nth-child(2n+1){
+    margin-top: 1em;
+ }
