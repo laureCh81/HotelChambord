@@ -79,6 +79,10 @@ body{
     margin: 0 ;    
 }
 
+section{
+    margin: 2em 2em;
+}
+
 div{
     display: block;
 }
@@ -97,18 +101,15 @@ h2, h3, h4, h5, h6 {
     font-family: 'Simonetta',Georgia,serif;
 }
 .conteneur {
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 
 /* ----Header-----*/
-#header {
-    background: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    
+
+#header.cgv{
+position: -webkit-sticky;
+position: sticky;
+top: 0px;
 }
 
 .navbar-dark .navbar-nav .nav-link,
