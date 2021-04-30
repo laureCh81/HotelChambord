@@ -25,7 +25,7 @@
               </button>
           
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="link collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="button nav-link" href="notrehotel.html">Notre hôtel</a>
@@ -44,8 +44,20 @@
                   </li>
               </ul>
             </div>
-            <div class="col-md-2 resa">
-                <a class="button shadow" href="reservations.html"> Réservation</a>
+            <div class="resa">
+                <a class="button" href="reservations.html"> Réservation</a>
+            </div>   
+              <div class="language dropdown">
+                <button type="button" class="button" data-toggle="dropdown">
+                  Langues
+                </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Français</a>
+                    <a class="dropdown-item" href="#">English</a>
+                </div>
+              </div>
+              
+                
               </div>
           </nav>    
                
@@ -134,21 +146,24 @@
         <div class="form-row">
             <div class="form-group col-12 col-lg-5">
                 <label for="prenomNews">Prenom</label>
-                <input type="text" class="form-control" name="name" id="prenomNews" placeholder="Votre prenom" />
+                <input type="text" class="form-control surname" name="name" id="prenomNews" placeholder="Votre prenom" />
+                <span class="prenomFalse"></span>
             </div>
             <div class="form-group col-12 col-lg-6">
                 <label for="nomNews">Nom</label>
-                <input type="text" class="form-control" name="name" id="nomNews" placeholder="Votre nom" />
+                <input type="text" class="form-control nom" name="name" id="nomNews" placeholder="Votre nom" />
+                <span class="nameFalse"></span>
             </div>             
             <div class="form-group col-12">
                 <label for="mailNews">Adresse email</label>
-                <input type="email" class="form-control" id="mailNews" placeholder="Votre adresse email">
+                <input type="email" class="form-control mailForm" id="mailNews" placeholder="Votre adresse email">
+                <span class="mailFalse"></span>
               </div>         
           </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="button" data-dismiss="modal">Fermer</button>
-        <button type="submit" class="button">Inscription</button>
+        <button type="button" class="button closeWin" data-dismiss="modal">Fermer</button>
+        <button type="submit" class="button" value="Envoyer">Inscription</button>        
       </div>
     </div>
   </div>
@@ -166,15 +181,18 @@
               <div class="form-row">
                   <div class="form-group col-12 col-lg-5">
                       <label for="prenomContact">Prenom</label>
-                      <input type="text" class="form-control" name="name" id="prenomContact" placeholder="Votre prenom" />
+                      <input type="text" class="form-control surname" name="name" id="prenomContact" placeholder="Votre prenom" />
+                      <span class="prenomFalse"></span>
                   </div>
                   <div class="form-group col-12 col-lg-6">
                       <label for="nomContact">Nom</label>
-                      <input type="text" class="form-control" name="name" id="nomContact" placeholder="Votre nom" />
+                      <input type="text" class="form-control nom" name="name" id="nomContact" placeholder="Votre nom" />
+                      <span class="nameFalse"></span>
                   </div>             
                   <div class="form-group col-12">
                       <label for="mailContact">Adresse email</label>
-                      <input type="email" class="form-control" id="mailContact" placeholder="Votre adresse email">
+                      <input type="email" class="form-control mailForm" id="mailContact" placeholder="Votre adresse email">
+                      <span class="mailFalse"></span>
                     </div>  
                     <div class="form-group col-12">
                         <label for="txtContact">Votre message</label>
@@ -196,7 +214,7 @@
 
 
     <!-- Grid container -->
-    <div class="align-content-center container-fluid">
+    <div class="justify-content-between container-fluid">
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
@@ -210,15 +228,15 @@
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0"> 
           <ul class="list-unstyled mb-0">
             <li>
-                <i class="fas fa-address-book fa-2x"></i>' '<span>1 rue Montaigne, 75008 Paris</span>
+                <i class="fas fa-address-book fa-2x"></i>   <span>1 rue Montaigne, 75008 Paris</span>
             </li>
             
             <li>
-                <i class="fas fa-phone-square fa-2x"></i>' '<span>01.70.01.51.43</span>
+                <i class="fas fa-phone-square fa-2x"></i>   <span>01.70.01.51.43</span>
             </li>
             
             <li>
-                <i class="fas fa-at fa-2x"></i>' '<a href="mailto:reservation@hotel-chambord.com">reservation@hotel-chambord.com</a>
+                <i class="fas fa-at fa-2x"></i>   <a href="mailto:reservation@hotel-chambord.com">reservation@hotel-chambord.com</a>
             </li>            
           </ul>
         </div>
@@ -243,20 +261,52 @@
         </div>
         <!--Grid column-->
         <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">      
-            <form class="form-inline" action="#recherche">
-                <input class="form-control mt-md-4 mr-sm-1" type="text" placeholder="Saisissez votre recherche">
-                <button class="button" type="submit">Recherche</button>
-              </form>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">      
+          <i class="fas fa-search fa-2x" data-toggle="modal" data-target="#modalSearch"></i>   
+          <span data-toggle="modal" data-target="#modalSearch">Recherche</span>
           </div>
+          <!-- Modal Recherche -->
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="titremodalSearch">Que recherchez vous ?</h4>            
+          </div>
+          <div class="modal-body">
+            <div class="form">
+                <div>                    
+                    <input class="form-control " type="text" placeholder="Saisissez votre recherche">
+                </div>                      
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button closeWin" data-dismiss="modal">Fermer</button>
+            <button type="submit" class="button" value="Envoyer">Rechercher</button>        
+          </div>
+        </div>
+      </div>
+    </div>
+         <!-- Modal Recherche -->
           <!--Grid column-->
+          
+        <div class="dropdown col-lg-2 col-md-12 mb-4 mb-md-0">      
+          <button type="button" class="button" data-toggle="dropdown"><i class="fas fa-share-alt fa-2x"></i>  Partager</button>   
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a class="dropdown-item" href="https://www.twitter.fr"><i class="fab fa-twitter"></i></a>
+            <a class="dropdown-item" href="https://www.messenger.com"><i class="fab fa-facebook-messenger"></i></a>
+            <a class="dropdown-item" href="https://api.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+            <a class="dropdown-item" href="mailto:''"><i class="far fa-envelope"></i></a>
+          </div>       
+          </div>
+        <!--Grid column-->   
       </div>
       <!--Grid row-->
     </div>
     <!-- Grid container -->
   
     <!-- Legals -->
-    <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="legals text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         <ul class="legals">
             <li class="d-inline"><a href="plandusite.html">Plan du site</a></li>
             <li class="d-inline"><a href="recrutement.html">Recrutement</a></li>
@@ -265,7 +315,7 @@
             <li class="d-inline"><a href="javascript:window.print()"><i class="fas fa-print"></i> Imprimer cette page</a></li>
         </ul>
         
-        <span>© 2021 - Ce site est factice, créé dans le cadre d'une formation Ifocop.</span>
+        <span class="legals">© 2021 - Ce site est factice, créé dans le cadre d'une formation Ifocop.</span>
     </div>
     <!-- Legals -->
   </footer>
