@@ -4,9 +4,53 @@ $(function(){
 if(window.innerWidth <= 480) {
         $("#header").removeClass("fixed-top");   
        }
+
+    //Calendrier
+
+    $.datepicker.setDefaults(
+        {
+            altField: "#datepicker",
+            closeText: 'Fermer',
+            prevText: 'Précédent',
+            nextText: 'Suivant',
+            currentText: 'Aujourd\'hui',
+            monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+            monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
+            dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+            dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
+            dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+            weekHeader: 'Sem.',
+            dateFormat: 'dd-mm-yy'
+        }
+    );
+    
+    $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+
+
+
 });
 
+
+
+
+
+
+// $(function(){
+//     $(window).scroll(function () {
+//         let headerHeight = $('#header').height();
+//        if ($(this).scrollTop() >= headerHeight) { //
+//         $('header').addClass("fixed-top"); 
+//        } else {
+//        $('header').removeClass("fixed-top");
+//        }
+//     });
+//   });
+
 //---- JS
+
+
 //Check Forms
   
  let mailForm = document.querySelector('.mailForm');

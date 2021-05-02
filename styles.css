@@ -106,7 +106,8 @@ h2, h3, h4, h5, h6 {
 
 /* ----Header-----*/
 
-#header.cgv{
+#header.cgv,
+#header.avisclients {
 position: -webkit-sticky;
 position: sticky;
 top: 0px;
@@ -272,9 +273,43 @@ li.d-inline{
     justify-content: space-between;
 }
 
- .form-row label:nth-child(2n+1){
+div.form-row label:nth-child(2n+1){
     margin-top: 1em;
  }
  .mailFalse, .prenomFalse, .nameFalse {
      color: #bfa764;
  }
+
+ /* Avis Clients */
+
+ .avis{
+     max-width: 90%;
+     background-color: rgb(49, 47, 47);
+     border: 3px solid #bfa764;
+     border-radius: 30px;
+     margin-bottom: 3em;
+     padding-bottom: 1em;
+     color: white;
+ }
+ @media (min-width: 768px){
+    .avis{
+        max-width: 60%;
+    }
+ } 
+section.formAvis{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.divAvis{
+   margin-bottom: 1em; 
+   padding-right: 1em;
+   padding-left: 1em;
+}
+.titreAvis{
+    text-align: center;
+    margin: 1em 1em;
+}
+
+.sejour{
+    margin-top: 1em;
+}
