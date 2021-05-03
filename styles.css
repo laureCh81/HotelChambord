@@ -313,3 +313,57 @@ section.formAvis{
 .sejour{
     margin-top: 1em;
 }
+
+/* Reservation */
+
+.reservation{
+    margin: 3em  auto;
+}
+@media (min-width: 768px){
+    .reservation{
+        width: 70%;
+    }
+ } 
+
+.bordResa{
+    border:solid 1px black;
+    border-radius: 30px;
+}
+.titreResa{    
+    margin: 1em 1em 3em 1em;
+}
+.labelResa{
+    margin-right: 0.5em; 
+    
+   
+}
+.input-group{    
+    align-items: flex-end;
+}
+.divResa{
+    display: flex;
+    
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 1em;
+}
+.divResa p{   
+    margin-bottom: 0;    
+}
+@media (max-width: 768px){
+    .hide{
+        display: none;
+    }
+ } 
+
+ div.room{
+     align-items: center;
+ }
+ 
+ .hidden{
+     display:none;
+ }
+ .page-link{
+    background-color: rgb(49, 47, 47);
+    }
+

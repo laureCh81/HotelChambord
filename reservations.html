@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content='hotel 5 étoiles, 5*, hotel de luxe, hotel Paris, hotel Paris 8e'/>
+    <meta name="description" content="Site Officiel de l'hôtel Chambord, Hôtel de luxe 5 étoiles à Paris dans le 8ème arrondissement au coeur du triangle d'or avec spa et restaurant haut de gamme... L'avis de nos clients compte.">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../projet_chambord/assets/css/styles.css">
+    <title>Hotel Chambord Paris | Avis clients</title>
+</head>
+<body>
+    
+    <header id="header" >
+        <nav class="navbar navbar-expand-md container-fluid bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Logo" style="width:100px;"></a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="shadow navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+            <!-- Navbar links -->
+            <div class="link collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="button nav-link" href="notrehotel.html">Notre hôtel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="button nav-link" href="leschambres.html">les chambres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="button nav-link" href="bienetre.html">Espace Bien-être</a>
+                </li>
+                <li class="nav-item">
+                    <a class="button nav-link" href="restauration.html">Restauration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="button nav-link" href="avisclients.html">Avis clients</a>
+                  </li>
+              </ul>
+            </div>
+            <div class="resa">
+                <a class="button" href="reservations.html"> Réservation</a>
+            </div>   
+              <div class="language dropdown">
+                <button type="button" class="button" data-toggle="dropdown">
+                  Langues
+                </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Français</a>
+                    <a class="dropdown-item" href="#">English</a>
+                </div>
+              </div>       
+          </nav>                   
+    </header>    
+    
+<!-- Reservation -->
+
+<section class="reservation align-content-center">
+  <div class="container bordResa">
+    <div class="titreResa">
+      <h3 class="text-center">Hôtel Chambord Paris  <i class="fas fa-star fa-xs "></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></h3>
+    </div>
+    <form >
+      <fieldset>   
+        <div class="form-row ">    
+          <div class="col-3 divResa hide">
+          <p class="">Choisissez vos dates de séjour</p>        
+          </div>     
+          <div class="input-group date col divResa ">        
+            <label class="labelResa"for="from"><i class="fas fa-calendar-alt fa-2x"></i> Arrivée</label>
+            <input class="labelResa" type="text" id="from" name="from">
+            <label class="labelResa" for="to"><i class="fas fa-calendar-alt fa-2x"></i> Départ</label>
+            <input class="labelResa" type="text" id="to" name="to">
+          </div>      
+        </div>
+        <div class="form-row "> 
+          <div class="col-3 divResa hide">
+            <p class="">Nombre de personne</p>        
+          </div>  
+          <div class="col divResa">
+            <label class="labelResa" for="adultes"><i class="fas fa-user fa-2x"></i> Adultes</label>
+            <select id="adultes" name="adultes" class="custom-select ">
+              <option selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>              
+            </select>
+          </div>   
+          <div class="col divResa">
+            <label class="labelResa" for="enfants"><i class="fas fa-user"></i> Enfants</label>
+            <select id="enfants" name="enfants" class="custom-select ">
+              <option selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>              
+            </select>
+          </div> 
+          <div class="col divResa">
+            <label class="labelResa" for="bebe"><i class="fas fa-user fa-xs"></i> Bébés</label>
+            <select id="bb" name="bebe" class="custom-select ">
+              <option selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>                           
+            </select>
+          </div>             
+        </div>
+        <div class="form-row room"> 
+          <div class="col-3 divResa hide">
+            <p class="">Type de chambre</p>        
+          </div>  
+          <div class="col divResa">
+            <label class="labelResa" for="chambres"><i class="fas fa-bed fa-2x"></i></label>
+            <select id="bedroom" name="chambres" class="custom-select ">
+              <option value="noChambre"selected>Chambres</option>
+              <option class="classic "value="chambre Classique">Classique</option>
+              <option class="confort"value="chambre Confort">Confort</option>
+              <option class="deluxe" value="chambre Deluxe">Deluxe</option>
+              <option class="suite" value="Suite">Suite</option>              
+            </select>
+          </div>
+          <div class="col divResa imgRoom">
+            <img id="classicRoom"src="" alt="classic room" class="hidden img-fluid rounded">
+            <img id="confortRoom"src="" alt="Confort room" class="hidden img-fluid rounded">
+            <img id="deluxeRoom" src="" alt="Deluxe room" class="hidden img-fluid rounded">
+            <img id="suiteRoom"src="images/suite.png" alt="Suite room " class="hidden img-fluid rounded">
+          </div>   
+          </div>
+          <div class="nextprev suiteResa">            
+              <ul class="pagination justify-content-center">                
+                <li class="page-item"><a id="nextResa"class="page-link button" href="#spa">Suivant <i class="fas fa-caret-right"></i></a></li>
+              </ul>           
+          </div>
+          <div id="spa"class="form-row options hidden">    
+            <div class="col-3 divResa">
+            <p class="">Réservez une prestation au spa</p>        
+            </div>     
+            <div class="col divResa">
+              <label class="labelResa" for="spa"><i class="fas fa-spa fa-2x"></i></label>
+              <select id="selectSpa" name="spa" class="custom-select ">
+                <option id="soins" selected>Soins</option>
+                <option value="Soin détente">Soin détente</option>
+                <option value="Soin découverte">Soin découverte</option>
+                <option value="Soin relaxant">Soin relaxant</option>
+                <option value="Soin plaisir">Soin plaisir</option>      
+                <option value="Soin évasion">Soin évasion</option>        
+              </select>
+            </div> 
+            <div class="col divResa">
+              <label class="labelResa" for="nbpers"><i class="fas fa-user fa-2x"></i></label>
+              <select id="nbspa" name="nbpers" class="custom-select ">
+                <option selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option> 
+                <option value="3">3</option>
+                <option value="4">4</option>                          
+              </select>
+            </div>
+            <div class="col divResa input-group date" data-provide="datepicker">
+              <label class="labelResa" for="datepicker"><i class="fas fa-calendar-alt fa-2x"></i></label>               
+              <input id="datepicker" type="text" class="form-control" placeholder="Date souhaitée">                  
+            </div>       
+                </div>               
+          
+          <div class="nextprev suiteOptions hidden">            
+            <ul class="pagination justify-content-center">                
+              <li class="page-item"><a id="nextResa"class="page-link button" href="#restauration">Suivant <i class="fas fa-caret-right"></i></a></li>
+            </ul>           
+        </div>
+        <div id="restauration" class="form-row resto hidden">    
+          <div class="col-3 divResa">
+          <p class="">Restauration</p>        
+          </div>     
+          <div class="col divResa">
+            <label class="labelResa" for="ptidej"><i class="fas fa-utensils fa-2x"></i></label>
+            <select id="ptidej" name="ptidej" class="custom-select ">
+              <option selected>Petit déjeuner</option>
+              <option id="ouiDej"  value="oui">oui</option>
+              <option value="non">non</option>                   
+            </select>
+          </div> 
+          <div class="col divResa">
+            <label class="labelResa" for="table"><i class="fas fa-utensils fa-2x"></i></label>
+            <select id="tableResto" name="table" class="custom-select ">
+              <option selected>Réservation diner</option>
+              <option id="tableOui" value="oui">oui</option>
+              <option value="non">non</option>                                        
+            </select>
+          </div>            
+        </div>
+        <div class="nextprev validResa hidden">            
+          <ul class="pagination justify-content-center">                
+            <li class="page-item" data-toggle="modal" data-target="#modalValidation"><a id="validation"class="page-link button" href="#">Valider<i class="fas fa-caret-right"></i></a></li>
+          </ul>    
+          <!--Modal validation -->
+          <div class="modal" id="modalValidation">
+            <div class="modal-dialog">
+              <div class="modal-content">                    
+                <div class="modal-header">
+                  <h4 class="modal-title">Votre réservation</h4>                  
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <span id="txtValidation"></span>
+                  <span id="txtValidation2"></span>
+                  <br>
+                  <span id="txtValidation3"></span>
+                  <br>
+                  <span id="txtValidation4"></span>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="button" data-dismiss="modal">Fermer</button>
+                  <button id="submitResa" type="submit" class="button">Valider</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+
+      
+
+
+
+          
+        </div> 
+        
+      </fieldset>
+  </form>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-lg-start">
+    <!-- Newletter & contacts -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">        
+        <button id="newletter" class="button separate" data-toggle="modal" data-target="#modalNew" >S'inscrire à la Newletter</button>
+        <button id="contact" class="button" data-toggle="modal" data-target="#modalContact"  >Nous contacter</button>
+    </div>
+      <!-- Newletter -->
+      <!-- Modal News -->
+    <div class="modal fade" id="modalNew" tabindex="-1" role="dialog"  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="titreModalNews">Inscription à la Newsletter</h4>
+        <p>Recevez les dernières actualités et découvrez les événements de l'hôtel Chambord</p> 
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+            <div class="form-group col-12 col-lg-5">
+                <label for="prenomNews">Prenom</label>
+                <input type="text" class="form-control surname" name="name" id="prenomNews" placeholder="Votre prenom" />
+                <span class="prenomFalse"></span>
+            </div>
+            <div class="form-group col-12 col-lg-6">
+                <label for="nomNews">Nom</label>
+                <input type="text" class="form-control nom" name="name" id="nomNews" placeholder="Votre nom" />
+                <span class="nameFalse"></span>
+            </div>             
+            <div class="form-group col-12">
+                <label for="mailNews">Adresse email</label>
+                <input type="email" class="form-control mailForm" id="mailNews" placeholder="Votre adresse email">
+                <span class="mailFalse"></span>
+              </div>         
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="button closeWin" data-dismiss="modal">Fermer</button>
+        <button type="submit" class="button" value="Envoyer">Inscription</button>        
+      </div>
+    </div>
+  </div>
+</div>
+     <!-- Modal News -->
+     <!-- Modal Contact -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="titreModalContact">Contactez-nous</h4>
+              <p>Une question, une remarque, nous vous répondrons dans les plus brefs délais.</p> 
+            </div>
+            <div class="modal-body">
+              <div class="form-row">
+                  <div class="form-group col-12 col-lg-5">
+                      <label for="prenomContact">Prenom</label>
+                      <input type="text" class="form-control" name="name" id="prenomContact" placeholder="Votre prenom" />
+                      <span class="prenomContFalse"></span>
+                  </div>
+                  <div class="form-group col-12 col-lg-6">
+                      <label for="nomContact">Nom</label>
+                      <input type="text" class="form-control nom" name="name" id="nomContact" placeholder="Votre nom" />
+                      <span class="nameFalse"></span>
+                  </div>             
+                  <div class="form-group col-12">
+                      <label for="mailContact">Adresse email</label>
+                      <input type="email" class="form-control mailForm" id="mailContact" placeholder="Votre adresse email">
+                      <span class="mailFalse"></span>
+                    </div>  
+                    <div class="form-group col-12">
+                        <label for="txtContact">Votre message</label>
+                        <textarea class="form-control" id="txtContact" placeholder="Texte libre"></textarea>
+                      </div>           
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="button" data-dismiss="modal">Fermer</button>
+              <button type="submit" class="button">Inscription</button>
+            </div>
+          </div>
+        </div>
+      </div>
+ <!-- Modal Contact -->
+
+
+
+
+
+    <!-- Grid container -->
+    <div class="justify-content-between container-fluid">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <a  href="index.html"><img class="align-content-center" src="images/logo.png" alt="Logo" style="width:100px;"></a>
+          
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0"> 
+          <ul class="list-unstyled mb-0">
+            <li>
+                <i class="fas fa-address-book fa-2x"></i>   <span>1 rue Montaigne, 75008 Paris</span>
+            </li>
+            
+            <li>
+                <i class="fas fa-phone-square fa-2x"></i>   <span>01.70.01.51.43</span>
+            </li>
+            
+            <li>
+                <i class="fas fa-at fa-2x"></i>   <a href="mailto:reservation@hotel-chambord.com">reservation@hotel-chambord.com</a>
+            </li>            
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class=" col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Suivez-nous</h5>
+            <br>
+          <ul class="list-unstyled">
+            <li class="d-inline">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+            </li>
+            <li class="d-inline">
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            </li>
+            <li class="d-inline">
+              <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">      
+          <i class="fas fa-search fa-2x" data-toggle="modal" data-target="#modalSearch"></i>   
+          <span data-toggle="modal" data-target="#modalSearch">Recherche</span>
+          </div>
+          <!-- Modal Recherche -->
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="titremodalSearch">Que recherchez vous ?</h4>            
+          </div>
+          <div class="modal-body">
+            <div class="form">
+                <div>                    
+                    <input class="form-control " type="text" placeholder="Saisissez votre recherche">
+                </div>                      
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button closeWin" data-dismiss="modal">Fermer</button>
+            <button type="submit" class="button" value="Envoyer">Rechercher</button>        
+          </div>
+        </div>
+      </div>
+    </div>
+         <!-- Modal Recherche -->
+          <!--Grid column-->
+          
+        <div class="dropdown col-lg-2 col-md-12 mb-4 mb-md-0">      
+          <button type="button" class="button" data-toggle="dropdown"><i class="fas fa-share-alt fa-2x"></i>  Partager</button>   
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="dropdown-item" href="https://www.twitter.fr" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="dropdown-item" href="https://www.messenger.com" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+            <a class="dropdown-item" href="https://api.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a class="dropdown-item" href="mailto:''"><i class="far fa-envelope"></i></a>
+          </div>       
+          </div>
+        <!--Grid column-->   
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Legals -->
+    <div class="legals text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <ul class="legals">
+            <li class="d-inline"><a href="plandusite.html">Plan du site</a></li>
+            <li class="d-inline"><a href="recrutement.html">Recrutement</a></li>
+            <li class="d-inline"><a href="mentionslegales.html">Mentions légales</a></li>
+            <li class="d-inline"><a href="cgv.html">CGV</a></li> 
+            <li class="d-inline"><a href="javascript:window.print()"><i class="fas fa-print"></i> Imprimer cette page</a></li>
+        </ul>
+        
+        <span class="legals">© 2021 - Ce site est factice, créé dans le cadre d'une formation Ifocop.</span>
+    </div>
+    <!-- Legals -->
+  </footer>
+  <!-- Footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
