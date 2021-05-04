@@ -106,6 +106,7 @@ h2, h3, h4, h5, h6 {
 
 /* ----Header-----*/
 
+#header.panier,
 #header.cgv,
 #header.mleg,
 #header.avisclients {
@@ -368,3 +369,14 @@ section.formAvis{
     background-color: rgb(49, 47, 47);
     }
 
+/*PANIER */
+#basket{
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-end
+}
+
+#basket a.button{
+    background-color: rgb(49, 47, 47);
+    padding-top: 3px;
+}

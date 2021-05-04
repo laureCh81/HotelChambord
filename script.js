@@ -33,21 +33,24 @@ if(window.innerWidth <= 480) {
     $( function() {
 		var dateFormat = "mm/dd/yy",
 			from = $( "#from" )
-				.datepicker({
+				.datepicker({                    
 					defaultDate: "+1w",
 					changeMonth: true,
-					numberOfMonths: 3
-				})
+					numberOfMonths: 2,
+                })
 				.on( "change", function() {
 					to.datepicker( "option", "minDate", getDate( this ) );
+                    
 				}),
+                
 			to = $( "#to" ).datepicker({
 				defaultDate: "+1w",
 				changeMonth: true,
-				numberOfMonths: 3
+				numberOfMonths: 2,                
 			})
 			.on( "change", function() {
 				from.datepicker( "option", "maxDate", getDate( this ) );
+                
 			});
 
 		function getDate( element ) {
@@ -61,6 +64,10 @@ if(window.innerWidth <= 480) {
 			return date;
 		}
 	} );
+    $("#from").datepicker({ minDate: 0 });
+    $("#to").datepicker({ minDate: 0 });
+    
+    
 
 // RESERVATION
 let chambre = $('#bedroom');
@@ -68,8 +75,8 @@ let arrivee =$('#from');
 let depart = $('#to');
 let nbadulte = $('#adultes');    
 let nbenfant = $('#enfants');    
-let nbbb = $('#bb');  
-let selecSpa = $('#selectSpa');
+let nbbb = $('#bebe');  
+let selectSpa = $('#selectSpa');
 let nbspa = $('#nbspa')
 let dateSpa= $('#datepicker')  
 let ptidej=$('#ptidej')
@@ -101,26 +108,25 @@ let tableResto=$('#tableResto')
         let nbpers = nbadulteS + nbenfants + nbbbs;
         $('#txtValidation').text(`Vous avez choisi une  ${chambre.val()} du  ${arrivee.val()} au ${depart.val()} pour ${nbpers} personne(s), `); 
 
-        let ouiDej=$('#ouiDej');
-        if(ptidej != ouiDej){
+       
+        if(ptidej.val() != "oui"){
             $('#txtValidation2').text(`sans petit déjeuner.`);
         }else{
             $('#txtValidation2').text(`avec petit déjeuner.`);  
         }
 
-        let tableOui=$('#tableOui')
-        if(tableResto != tableOui){
+        
+        if(tableResto.val() != "oui"){
             $('#txtValidation3').text(`Vous ne souhaitez pas réserver de table au restaurant Chambord.`);
         }else{
             $('#txtValidation3').text(` Vous prendrez le(s) diner(s) au restaurant Chambord.`);             
         }
 
-        let choixSpa = $('#soins');
-        if(selectSpa = choixSpa){
-            $('#txtValidation4').text(`Vous ne souhaitez pas réserver de soin au spa.` )
         
+        if(selectSpa.val() != "soinsSpa"){
+            $('#txtValidation4').text(`Vous avez également choisi un  ${selectSpa.val()} pour  ${nbspa.val()} personne(s) que vous souhaitez faire le ${dateSpa.val()}.`)  
         }else{
-            $('#txtValidation4').text(`Vous avez également choisi un  ${selecSpa.val()} pour  ${nbspa.val()} personne(s) que vous souhaitez faire le ${dateSpa.val()}.`)
+            $('#txtValidation4').text(`Vous ne souhaitez pas réserver de soin au spa.` )
         }
        
     });

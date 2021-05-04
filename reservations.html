@@ -60,198 +60,175 @@
                 </div>
               </div>       
           </nav>                   
-    </header>    
-    
-<!-- Reservation -->
+    </header> 
 
-<section class="reservation align-content-center">
-  <div class="container bordResa">
-    <div class="titreResa">
-      <h3 class="text-center">Hôtel Chambord Paris  <i class="fas fa-star fa-xs "></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></h3>
-    </div>
-    <form >
-      <fieldset>   
-        <div class="form-row ">    
-          <div class="col-3 divResa hide">
-          <p class="">Choisissez vos dates de séjour</p>        
-          </div>     
-          <div class="input-group date col divResa ">        
-            <label class="labelResa"for="from"><i class="fas fa-calendar-alt fa-2x"></i> Arrivée</label>
-            <input class="labelResa" type="text" id="from" name="from">
-            <label class="labelResa" for="to"><i class="fas fa-calendar-alt fa-2x"></i> Départ</label>
-            <input class="labelResa" type="text" id="to" name="to">
-          </div>      
+    <div id="basket" >
+      <a class="button" href="monpanier.html"><span>Voir mon panier</span><i class="fas fa-shopping-cart fa-2x"></i></a></div>
+
+    <!-- Reservation -->
+    <section class="reservation ">
+      <div class="container bordResa">
+        <div class="titreResa">
+          <h3 class="text-center">Hôtel Chambord Paris  <i class="fas fa-star fa-xs "></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></h3>
         </div>
-        <div class="form-row "> 
-          <div class="col-3 divResa hide">
-            <p class="">Nombre de personne</p>        
-          </div>  
-          <div class="col divResa">
-            <label class="labelResa" for="adultes"><i class="fas fa-user fa-2x"></i> Adultes</label>
-            <select id="adultes" name="adultes" class="custom-select ">
-              <option selected>0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>              
-            </select>
-          </div>   
-          <div class="col divResa">
-            <label class="labelResa" for="enfants"><i class="fas fa-user"></i> Enfants</label>
-            <select id="enfants" name="enfants" class="custom-select ">
-              <option selected>0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>              
-            </select>
-          </div> 
-          <div class="col divResa">
-            <label class="labelResa" for="bebe"><i class="fas fa-user fa-xs"></i> Bébés</label>
-            <select id="bb" name="bebe" class="custom-select ">
-              <option selected>0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>                           
-            </select>
-          </div>             
-        </div>
-        <div class="form-row room"> 
-          <div class="col-3 divResa hide">
-            <p class="">Type de chambre</p>        
-          </div>  
-          <div class="col divResa">
-            <label class="labelResa" for="chambres"><i class="fas fa-bed fa-2x"></i></label>
-            <select id="bedroom" name="chambres" class="custom-select ">
-              <option value="noChambre"selected>Chambres</option>
-              <option class="classic "value="chambre Classique">Classique</option>
-              <option class="confort"value="chambre Confort">Confort</option>
-              <option class="deluxe" value="chambre Deluxe">Deluxe</option>
-              <option class="suite" value="Suite">Suite</option>              
-            </select>
-          </div>
-          <div class="col divResa imgRoom">
-            <img id="classicRoom"src="" alt="classic room" class="hidden img-fluid rounded">
-            <img id="confortRoom"src="" alt="Confort room" class="hidden img-fluid rounded">
-            <img id="deluxeRoom" src="" alt="Deluxe room" class="hidden img-fluid rounded">
-            <img id="suiteRoom"src="images/suite.png" alt="Suite room " class="hidden img-fluid rounded">
-          </div>   
-          </div>
-          <div class="nextprev suiteResa">            
-              <ul class="pagination justify-content-center">                
-                <li class="page-item"><a id="nextResa"class="page-link button" href="#spa">Suivant <i class="fas fa-caret-right"></i></a></li>
-              </ul>           
-          </div>
-          <div id="spa"class="form-row options hidden">    
-            <div class="col-3 divResa">
-            <p class="">Réservez une prestation au spa</p>        
-            </div>     
-            <div class="col divResa">
-              <label class="labelResa" for="spa"><i class="fas fa-spa fa-2x"></i></label>
-              <select id="selectSpa" name="spa" class="custom-select ">
-                <option id="soins" selected>Soins</option>
-                <option value="Soin détente">Soin détente</option>
-                <option value="Soin découverte">Soin découverte</option>
-                <option value="Soin relaxant">Soin relaxant</option>
-                <option value="Soin plaisir">Soin plaisir</option>      
-                <option value="Soin évasion">Soin évasion</option>        
-              </select>
-            </div> 
-            <div class="col divResa">
-              <label class="labelResa" for="nbpers"><i class="fas fa-user fa-2x"></i></label>
-              <select id="nbspa" name="nbpers" class="custom-select ">
-                <option selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option> 
-                <option value="3">3</option>
-                <option value="4">4</option>                          
-              </select>
+        <form >
+          <fieldset>   
+            <div class="form-row ">    
+              <div class="col-3 divResa hide">
+              <p class="">Choisissez vos dates de séjour</p>        
+              </div>     
+              <div class="input-group date col divResa ">        
+                <label class="labelResa" for="from"><i class="fas fa-calendar-alt fa-2x"></i> Arrivée</label>
+                <input class="labelResa" type="text" id="from" name="from">
+                <label class="labelResa" for="to"><i class="fas fa-calendar-alt fa-2x"></i> Départ</label>
+                <input class="labelResa" type="text" id="to" name="to">
+              </div>      
             </div>
-            <div class="col divResa input-group date" data-provide="datepicker">
-              <label class="labelResa" for="datepicker"><i class="fas fa-calendar-alt fa-2x"></i></label>               
-              <input id="datepicker" type="text" class="form-control" placeholder="Date souhaitée">                  
-            </div>       
-                </div>               
-          
-          <div class="nextprev suiteOptions hidden">            
-            <ul class="pagination justify-content-center">                
-              <li class="page-item"><a id="nextResa"class="page-link button" href="#restauration">Suivant <i class="fas fa-caret-right"></i></a></li>
-            </ul>           
-        </div>
-        <div id="restauration" class="form-row resto hidden">    
-          <div class="col-3 divResa">
-          <p class="">Restauration</p>        
-          </div>     
-          <div class="col divResa">
-            <label class="labelResa" for="ptidej"><i class="fas fa-utensils fa-2x"></i></label>
-            <select id="ptidej" name="ptidej" class="custom-select ">
-              <option selected>Petit déjeuner</option>
-              <option id="ouiDej"  value="oui">oui</option>
-              <option value="non">non</option>                   
-            </select>
-          </div> 
-          <div class="col divResa">
-            <label class="labelResa" for="table"><i class="fas fa-utensils fa-2x"></i></label>
-            <select id="tableResto" name="table" class="custom-select ">
-              <option selected>Réservation diner</option>
-              <option id="tableOui" value="oui">oui</option>
-              <option value="non">non</option>                                        
-            </select>
-          </div>            
-        </div>
-        <div class="nextprev validResa hidden">            
-          <ul class="pagination justify-content-center">                
-            <li class="page-item" data-toggle="modal" data-target="#modalValidation"><a id="validation"class="page-link button" href="#">Valider<i class="fas fa-caret-right"></i></a></li>
-          </ul>    
-          <!--Modal validation -->
-          <div class="modal" id="modalValidation">
-            <div class="modal-dialog">
-              <div class="modal-content">                    
-                <div class="modal-header">
-                  <h4 class="modal-title">Votre réservation</h4>                  
-                </div>
-          
-                <!-- Modal body -->
-                <div class="modal-body">
-                  <span id="txtValidation"></span>
-                  <span id="txtValidation2"></span>
-                  <br>
-                  <span id="txtValidation3"></span>
-                  <br>
-                  <span id="txtValidation4"></span>
-                </div>
-          
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button type="button" class="button" data-dismiss="modal">Fermer</button>
-                  <button id="submitResa" type="submit" class="button">Valider</button>
-                </div>
-          
+            <div class="form-row "> 
+              <div class="col-3 divResa hide">
+                <p class="">Nombre de personne</p>        
+              </div>  
+              <div class="col divResa">
+                <label class="labelResa" for="adultes"><i class="fas fa-user fa-2x"></i> Adultes</label>
+                <select id="adultes" name="adultes" class="custom-select ">
+                  <option selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>              
+                </select>
+              </div>   
+              <div class="col divResa">
+                <label class="labelResa" for="enfants"><i class="fas fa-user"></i> Enfants</label>
+                <select id="enfants" name="enfants" class="custom-select ">
+                  <option selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>              
+                </select>
+              </div> 
+              <div class="col divResa">
+                <label class="labelResa" for="bebe"><i class="fas fa-user fa-xs"></i> Bébés</label>
+                <select id="bebe" name="bebe" class="custom-select ">
+                  <option selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>                           
+                </select>
+              </div>             
+            </div>
+            <div class="form-row room"> 
+              <div class="col-3 divResa hide">
+                <p class="">Type de chambre</p>        
+              </div>  
+              <div class="col divResa">
+                <label class="labelResa" for="bedroom"><i class="fas fa-bed fa-2x"></i></label>
+                <select id="bedroom" name="chambres" class="custom-select ">
+                  <option value="noChambre" selected>Chambres</option>
+                  <option class="classic" value="chambre Classique">Classique</option>
+                  <option class="confort" value="chambre Confort">Confort</option>
+                  <option class="deluxe" value="chambre Deluxe">Deluxe</option>
+                  <option class="suite" value="Suite">Suite</option>              
+                </select>
+              </div>              
               </div>
+              <div class="nextprev suiteResa">            
+                  <ul class="pagination justify-content-center">                
+                    <li class="page-item"><a id="nextResa" class="page-link button" href="#spa">Suivant <i class="fas fa-caret-right"></i></a></li>
+                  </ul>           
+              </div>
+              <div id="spa" class="form-row options hidden">    
+                <div class="col-3 divResa">
+                <p class="">Réservez une prestation au spa</p>        
+                </div>     
+                <div class="col divResa">
+                  <label class="labelResa" for="selectSpa"><i class="fas fa-spa fa-2x"></i></label>
+                  <select id="selectSpa" name="spa" class="custom-select ">
+                    <option value="soinsSpa" selected>Soins</option>
+                    <option value="Soin détente">Soin détente</option>
+                    <option value="Soin découverte">Soin découverte</option>
+                    <option value="Soin relaxant">Soin relaxant</option>
+                    <option value="Soin plaisir">Soin plaisir</option>      
+                    <option value="Soin évasion">Soin évasion</option>        
+                  </select>
+                </div> 
+                <div class="col divResa">
+                  <label class="labelResa" for="nbspa"><i class="fas fa-user fa-2x"></i></label>
+                  <select id="nbspa" name="nbspa" class="custom-select ">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option> 
+                    <option value="3">3</option>
+                    <option value="4">4</option>                          
+                  </select>
+                </div>
+                <div class="col divResa input-group date" data-provide="datepicker">
+                  <label class="labelResa" for="datepicker"><i class="fas fa-calendar-alt fa-2x"></i></label>               
+                  <input id="datepicker" type="text" class="form-control" placeholder="Date souhaitée">                  
+                </div>       
+                    </div>               
+              
+              <div class="nextprev suiteOptions hidden">            
+                <ul class="pagination justify-content-center">                
+                  <li class="page-item"><a class="page-link button" href="#restauration">Suivant <i class="fas fa-caret-right"></i></a></li>
+                </ul>           
             </div>
-          </div>
-
-
-      
-
-
-
-          
-        </div> 
-        
-      </fieldset>
-  </form>
-</div>
+            <div id="restauration" class="form-row resto hidden">    
+              <div class="col-3 divResa">
+              <p class="">Restauration</p>        
+              </div>     
+              <div class="col divResa">
+                <label class="labelResa" for="ptidej"><i class="fas fa-utensils fa-2x"></i></label>
+                <select id="ptidej" name="ptidej" class="custom-select ">
+                  <option selected>Petit déjeuner</option>
+                  <option id="ouiDej"  value="oui">oui</option>
+                  <option value="non">non</option>                   
+                </select>
+              </div> 
+              <div class="col divResa">
+                <label class="labelResa" for="tableResto"><i class="fas fa-utensils fa-2x"></i></label>
+                <select id="tableResto" name="tableResto" class="custom-select ">
+                  <option selected>Réservation diner</option>
+                  <option id="tableOui" value="oui">oui</option>
+                  <option value="non">non</option>                                        
+                </select>
+              </div>            
+            </div>
+            <div class="nextprev validResa hidden">            
+              <ul class="pagination justify-content-center">                
+                <li class="page-item" data-toggle="modal" data-target="#modalValidation"><a id="validation" class="page-link button" href="#">Valider<i class="fas fa-caret-right"></i></a></li>
+              </ul>    
+              <!--Modal validation -->
+              <div class="modal" id="modalValidation">
+                <div class="modal-dialog">
+                  <div class="modal-content">                    
+                    <div class="modal-header">
+                      <h4 class="modal-title">Votre réservation</h4>                  
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <span id="txtValidation"></span>
+                      <span id="txtValidation2"></span>
+                      <br>
+                      <span id="txtValidation3"></span>
+                      <br>
+                      <span id="txtValidation4"></span>
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="button" data-dismiss="modal">Fermer</button>
+                      <button id="submitResa" type="submit" class="button">Valider</button>
+                    </div>              
+                  </div>
+                </div>
+              </div>  
+             </div>             
+          </fieldset>
+      </form>
+    </div>
 </section>
-
-
-
-
-
-
-
-
-
-
 
 <!-- Footer -->
 <footer class="bg-dark text-center text-lg-start">
