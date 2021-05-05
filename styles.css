@@ -328,6 +328,15 @@ section.formAvis{
         width: 70%;
     }
  } 
+#basket{
+    margin: 1em;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#basket a{
+    padding-top: 2px;    
+}
 
 .bordResa{
     box-shadow:  10px 7px 5px whitesmoke;
