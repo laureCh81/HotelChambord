@@ -83,9 +83,7 @@ section{
     margin: 2em 2em;
 }
 
-div{
-    display: block;
-}
+
 
 h1 {
     margin: 0 0 .3em;
@@ -114,7 +112,10 @@ position: -webkit-sticky;
 position: sticky;
 top: 0px;
 }
-
+.logo{
+   width: 25%; 
+   margin-left: 2em;
+}
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-toggler{
 color: rgba(255,255,255);
@@ -157,7 +158,7 @@ input[type="button"],
 	appearance: none;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	background-color: transparent;
-	border-radius: 3px;	
+    border-radius: 3px;	
 	color:#fff;
 	cursor: pointer;
 	display: inline-block;
@@ -320,6 +321,7 @@ section.formAvis{
 
 .reservation{
     margin: 3em  auto;
+    
 }
 @media (min-width: 768px){
     .reservation{
@@ -328,7 +330,7 @@ section.formAvis{
  } 
 
 .bordResa{
-    border:solid 1px black;
+    box-shadow:  10px 7px 5px whitesmoke;
     border-radius: 30px;
 }
 .titreResa{    
@@ -370,13 +372,47 @@ section.formAvis{
     }
 
 /*PANIER */
-#basket{
+.chambrePanier{
     margin-top: 1em;
-    display: flex;
-    justify-content: flex-end
+    padding: 1em;
+    box-shadow:  10px 7px 5px whitesmoke;
+    border-radius: 30px;
+    min-width: 64%;
+}
+.articlePanier{
+    width: 100%;
+}
+.articlePanier h5.recapitulatif{
+    margin-top: 1em;
+}
+button.photo{
+    border: transparent;
+    background-color: transparent;
+    padding-right: 1em;
+}
+.ajout{
+    background-color: rgba(144, 144, 144, 0.5);
+    z-index: -1;
+}
+.small{
+    font-style: italic;
+    font-size:  x-small;
+    margin-top: -15px;
 }
 
-#basket a.button{
-    background-color: rgb(49, 47, 47);
-    padding-top: 3px;
+.prix{
+    font-size: larger;
+    margin-left: 60%;
+}
+
+.prix2{
+    color: rgb(170, 43, 43);
+    margin-left: 60%;
+    font-size: larger;
+}
+.promo{
+    margin-bottom: -0.5em;
+}
+.payment i{
+    margin-right: 0.4em;
 }

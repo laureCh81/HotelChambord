@@ -19,7 +19,7 @@
 
 <body>
 
-  <header id="header" class="fixed-top">
+  <header id="header" class="panier">
     <nav class="navbar navbar-expand-md container-fluid bg-dark navbar-dark">
       <!-- Brand -->
       <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
@@ -62,91 +62,135 @@
         </div>
       </div>
 
-
-      </div>
     </nav>
 
   </header>
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-6">
+        <div>
+          <h3>Mon panier</h3>
+          <span>Vous avez 15 min pour valider votre réservation. </span>
+        </div>
+        <div class="d-inline-flex chambrePanier">
+          <button class="photo" type="button" data-toggle="modal" data-target="#modalChambrePanier">
+            <img class="rounded" src="images/chambresmall.png" alt="">
+          </button>
+          <!-- Modal Chambre -->
+          <div class="modal" id="modalChambrePanier">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Suite</h4>
+                </div>
+                <div class="modal-body">
+                  <img class="rounded" src="images/chambremid.png" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Chambre -->
+          <div class="articlePanier">
+            <h5>Suite avec vue sur cour</h5>
+            <p>Du 10/05/2021 au 12/05/2021 soit 2 nuits</p>
+            <p class="small">Vous bénéficiez de l'offre spéciale Lune de Miel</p>
+            <br>
+            <p class="prix">3900 €</p>
+          </div>
+        </div>
+        <div class="d-inline-flex chambrePanier">
+          <button class="photo" type="button" data-toggle="modal" data-target="#modalDejPanier">
+            <img class="rounded" src="images/breakfastsmall.png" alt="">
+          </button>
+          <!-- Modal Petit dejeuner -->
+          <div class="modal" id="modalDejPanier">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Petit déjeuner</h4>
+                </div>
+                <div class="modal-body">
+                  <img class="rounded" src="images/breakfastmid.png" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Petit dejeuner -->
+          <div class="articlePanier">
+            <h5>Petit déjeuner pour 2 personnes</h5>
+            <p>Du 10/05/2021 au 12/05/2021 soit 2 nuits</p>
+            <p class="small">Vous bénéficiez de l'offre spéciale Lune de Miel</p>
+            <br>
+            <p class="prix">OFFERT</p>
+          </div>
+        </div>
+        <div class="d-inline-flex chambrePanier">
+          <button class="photo" type="button" data-toggle="modal" data-target="#modalSoinPanier">
+            <img class="rounded" src="images/wellnesssmall.png" alt="">
+          </button>
+          <!-- Modal Petit dejeuner -->
+          <div class="modal" id="modalSoinPanier">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Soin évasion</h4>
+                </div>
+                <div class="modal-body">
+                  <img class="rounded" src="images/wellnessmid.png" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Petit dejeuner -->
+          <div class="articlePanier">
+            <h5>Soin évasion pour 2 personnes</h5>
+            <p>le 11/05/2021</p>
+            <p class="small">Soin d'une durée de 90 min</p>
+            <br>
+            <p class="prix">360 €</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-6">
+        <div>
+          <br>
+          <h3>Récapitualif</h3>
+        </div>
+        <div class="chambrePanier">
+          <div class="articlePanier">
+            <p class="promo">Vous avez un code promo ?</p>
+            <button type="button" class="page-link button ajout">Ajouter</button>
+          </div>
+          <div class="articlePanier">
+            <h5 class="recapitulatif">Montant total</h5>
+            <p>Du 10/05/2021 au 12/05/2021 soit 2 nuits</p>
+            <p class="prix2">4260 €</p>
+          </div>
+        </div>
+        <div class="chambrePanier">
+          <div class="articlePanier">
+            <p>Paiement 100% sécurisé <i class="fas fa-lock fa-xs"></i> </p>
+          </div>
+          <div class="articlePanier">
+            <p class="payment"><i class="fab fa-cc-visa fa-2x"></i> <i class="fab fa-cc-mastercard fa-2x"></i> <i
+                class="fab fa-cc-amex fa-2x"></i> <i class="fab fa-cc-paypal fa-2x"></i></p>
+          </div>
+          <div>
+            <button type="button" class="page-link button ajout">Payer</button>
+          </div>
 
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
-  </section>
-  <section>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consectetur ex, ipsa sit explicabo vel vitae nisi
-    exercitationem, praesentium error quisquam eos cumque? Consequuntur magni similique nemo, a veniam nostrum?
+        </div>
+      </div>
+    </div>
   </section>
 
 
