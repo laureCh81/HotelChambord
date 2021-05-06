@@ -105,11 +105,11 @@ h2, h3, h4, h5, h6 {
 /* ----Header-----*/
 
 
-
 #header.panier,
 #header.cgv,
 #header.mleg,
-#header.avisclients {
+#header.avisclients,
+#header.actualite {
 position: -webkit-sticky;
 position: sticky;
 top: 0px;
@@ -427,4 +427,18 @@ button.photo{
 }
 .payment i{
     margin-right: 0.4em;
+}
+
+/* ACTUALITES */
+.articleActu{
+    margin-top: 1em;
+    padding: 1em;
+    box-shadow:  10px 7px 5px whitesmoke;
+    border-radius: 30px;
+}
+img.actu{
+    width: 100%;
+    margin-top: 0.5em;
+    padding-right: 1em;
+
 }
