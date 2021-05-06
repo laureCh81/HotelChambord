@@ -104,6 +104,8 @@ h2, h3, h4, h5, h6 {
 
 /* ----Header-----*/
 
+
+
 #header.panier,
 #header.cgv,
 #header.mleg,
@@ -255,7 +257,8 @@ li.d-inline{
     background-color: black;   
 }
 .dropdown-item{
-    display: inline;
+    /* display: inline; */
+    color: #bfa764;
 }
 
 /* MODAL */
