@@ -13,14 +13,13 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <title>Hôtel Chambord Paris | 5 étoiles | Paris 8e</title>
+  <title>Hotel Chambord Paris | 5 étoiles | Paris 8e</title>
 </head>
 
 <body>
 
-  <header id="header" class="fixed-top">
+  <header id="header" class="noFixed">
     <nav id="headerNav" class="navbar navbar-expand-lg container-fluid bg-dark navbar-dark">
       <!-- Brand -->
       <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
@@ -92,104 +91,113 @@
           Langues
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="index.html">Français</a>
-          <a class="dropdown-item" href="welcome.html">English</a>
+          <a class="dropdown-item" href="acces.html">Français</a>
+          <a class="dropdown-item" href="acces-en.html">English</a>
         </div>
       </div>
+      
     </nav>
   </header>
-
-  <img class="chateau" src="images/imageprincipal.png" alt="hotelchambord">
+  <article>
+    <iframe class="iframeAcces"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6401922469727!2d2.299889715555236!3d48.8650711792881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Avenue%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1620327132882!5m2!1sfr!2sfr"
+       height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </article>
+  <div class="lienAcces">
+    <a class="button" href="https://www.google.com/maps/place/1+Avenue+Montaigne,+75008+Paris/@48.8650712,2.2998897,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66fdd0dd39a4d:0x508194b82b12f012!8m2!3d48.8650712!4d2.3020784?hl=fr"
+      target="_blank">Itinéraire</a>
+  </div>
 
   <section id="debutPage" class="container">
-    <section>
-      <div class="slogan">
-        <h1>Hôtel & SPA CHAMBORD</h1>
-        <h2>La promesse d'une expérience hôtelière incomparable.</h2>
+    <h2 class="text-center mb-5">Comment venir à l'hôtel</h2>
+    <div class="d-inline-flex align-content-center row">
+      <div class="col-lg-4 col-md-12 col-sm-12 px-3">
+        <div class="transport">
+          <i class="fas fa-subway fa-2x"></i>
+          <h5>En train </h5>
+        </div>
+        <div class="itineraire">
+          <p> L’Hôtel est situé entre 10 et 20 minutes de trajet de l’ensemble des gares parisiennes. Néanmoins, si vous
+            préférez le métro, empruntez la ligne n°9 – station Alma Marceau ou le RER C station Pont de l'Alma.
+            <br><br>
+            Nous avons également la possibilité de réserver une voiture avec chauffeur, n’hésitez pas à contacter la
+            conciergerie.
+          </p>
+        </div>
       </div>
-    </section>
+      <div class="col-lg-4 col-md-12 col-sm-12 px-3">
+        <div class="transport">
+          <i class="fas fa-plane fa-2x"></i>
+          <h5>En avion</h5>
+        </div>
+        <!-- Accordion -->
+        <div class="accordion itineraire" id="aeroports">
+          <div class="card ">
+            <div class="card-header" id="headingOne">
+              <button class="mb-0 button collapsed trajet" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Depuis l'aéroport CDG
+              </button>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#aeroports">
+              <div class="card-body">
+                <p>
+                  <strong>Possibilité de voiture avec chauffeur</strong> : réservation et renseignements auprès de la
+                  conciergerie : concierge@hotelchambord.com
+                  <br> <br>
+                  <strong>Navette</strong> – Des navettes Le Bus Direct (ligne 4) vous amènent à la gare Montparnasse
+                  qui se trouve à 12 minutes en taxi de l’hôtel.
+                  <br> <br>
+                  <strong>Métro / RER</strong> – Si vous n’avez pas beaucoup de bagages, le RER B est une excellente
+                  alternative. Changer pour le RER C à la station Saint-Michel, descendre à Pont de l'Alma. L’Hôtel
+                  Chambord se trouve ensuite à 4 minutes à pied en traversant le pont.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <button class="mb-0 button collapsed trajet" type="button" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Depuis l'aéroport d'Orly
+              </button>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#aeroports">
+              <div class="card-body">
+                <p>
+                  <strong>Possibilité de voiture avec chauffeur</strong> : réservation et renseignements auprès de la
+                  conciergerie : concierge@hotelchambord.com
+                  <br> <br>
+                  <strong>Navette</strong> – Des navettes Le Bus Direct (ligne 1) vous amènent à la gare Montparnasse
+                  qui se trouve à 12 minutes en taxi de l’hôtel.
+                  <br> <br>
+                  <strong>Taxi</strong>– Vous pouvez facilement prendre un taxi depuis l’aéroport. Il faut compter
+                  environ 20-30 min pour rejoindre l’hôtel.
+                  <br> <br>
+                  <strong>Métro / RER</strong> – Si vous n’avez pas beaucoup de bagages, le RER B est une excellente
+                  alternative. Changer pour le RER C à la station Saint-Michel, déscender à Pont de l'Alma. L’Hôtel
+                  Chambord se trouve ensuite à 4 minutes à pied en traversant le pont.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>      
+        <!-- Accordion -->
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 px-3">
+        <div class="transport">
+          <i class="fas fa-bus-alt fa-2x"></i>
+          <h5>En bus </h5>
+        </div>
+        <div class="itineraire">
+          <p> Ligne 42 : Arrêt Montaigne - François 1er
+            <br>
+            Ligne 93: Arrêt Rond-Point Des Champs-Elysees - Franklin D. Roosevelt
 
-    <section class="row aos indexAos">
-      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
-        class="col-lg-6 col-md-6 col-sm-4 col-xs-4 col-xs-4 cadreimg"><img src="images/description1.jpg" alt=""></div>
-      <div class="cadretxt col-lg-6 col-md-6 col-sm-8 col-xs-8">
-        <p class="descriptif">Maison de maître pour certains, château pour d'autres, l'Hôtel Chambord s'appréhende telle
-          une demeure à part qui accueille épicuriens, passionés d'histoire, amoureux de Paris. Les chambres et
-          suites, dont chaque clé est donnée par le majordome, ont l'allure de pied-à-terre. Chaque couloir semble
-          mener,
-          comme autrefois, vers des appartements d'apparats.</p>
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="indexChambre">
-      <div class="titre">
-        <h3><em>Les chambres</em></h3>
-      </div>
-      <section class="row aos indexAos">
-        <div class="cadretxt col-lg-6 col-md-6 col-sm-8 col-xs-8">
-          <p>Conçues pour des voyageurs modernes en quête de confort absolu, nos chambres font partie des plus
-            spacieuses de Paris et sont équipées d’une technologie de pointe. De la chambre classique à la suite,
-            profitez d'une qualité de service incomparable.</p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4 col-xs-4" id="slider">
-          <figure>
-            <a href="chambreclassic.html"><img src="images/chambreclassic.jpg" alt="chambre classique"></a>
-            <a href="chambreconfort.html"><img src="images/chambreconfort.jpg" alt="chambre confort"></a>
-            <a href="chambredeluxe.html"><img src="images/chambredeluxe.jpg" alt="chambre deluxe"></a>
-            <a href="suite.html"><img src="images/chambresuite.jpg" alt="suite"></a>
-          </figure>
-        </div>
-
-      </section>
-      <div class="show1">
-        <a class="button" href="leschambres.html">
-          <p>Découvrez nos chambres</p>
-        </a>
-      </div>
-    </section>
-    <section class="indexChambre">
-      <div class="titre">
-        <h4><em>Le SPA</em></h4>
-      </div>
-      <section class="row aos indexAos">
-        <div class="cadretxt col-lg-6 col-md-6 col-sm-8 col-xs-8">
-          <p>The Chambord Spa, plus grand spa de palace de la capitale avec ses 1800m², est une véritable invitation au
-            bien-être, à la sérénité et au raffinement. Ici se conjuguent à la perfection l’art de la beauté à la
-            française et l’expertise millénaire de la médecine d'Orient.</p>
-        </div>
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
-          class="cadreimg col-lg-6 col-md-6 col-sm-4 col-xs-4">
-          <img src="images/spa_aqua_opt.jpg" alt="">
-        </div>
-      </section>
-      <div class="show2">
-        <a class="button" href="bienetre.html">
-          <p>Découvrez notre SPA et ses soins</p>
-        </a>
-      </div>
-    </section>
-    <section class="indexChambre">
-      <div class="titre">
-        <h4><em>Le Restaurant</em></h4>
-      </div>
-      <section class="row aos indexAos">
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
-          class="cadreimg col-lg-6 col-md-6 col-sm-4 col-xs-4">
-          <img src="images/resto_kitchen.jpg" alt="">
-        </div>
-        <div class="cadretxt col-lg-6 col-md-6 col-sm-8 col-xs-8">
-          <p>Dans le respect de l’art de vivre à la française, la vitrine du 1er rue Montaigne abrite un restaurant. Du
-            petit déjeuner jusqu’au dîner, en passant par l’heure du thé, il propose une restauration légère et
-            gourmande. Soupes et salades mais aussi un choix de plats chauds. À déguster à l’intérieur, ou sur la
-            terrasse chauffée, avec une vue imprenable sur la Tour Eiffel.</p>
-        </div>
-      </section>
-      <div class="show1">
-        <a class="button" href="restauration.html">
-          <p>Découvrez notre Restaurant</p>
-        </a>
-      </div>
-    </section>
   </section>
 
 
@@ -251,29 +259,29 @@
             <div class="form-row">
               <div class="form-group col-12 col-lg-5">
                 <label for="prenomContact">Prenom</label>
-                <input type="text" class="form-control" name="name" id="prenomContact" placeholder="Votre prenom" />
+                <input type="text" class="form-control surname" name="name" id="prenomContact"
+                  placeholder="Votre prenom" />
                 <span class="prenomFalse"></span>
               </div>
               <div class="form-group col-12 col-lg-6">
                 <label for="nomContact">Nom</label>
-                <input type="text" class="form-control" name="name" id="nomContact" placeholder="Votre nom" />
+                <input type="text" class="form-control nom" name="name" id="nomContact" placeholder="Votre nom" />
                 <span class="nameFalse"></span>
               </div>
               <div class="form-group col-12">
                 <label for="mailContact">Adresse email</label>
-                <input type="email" class="form-control" id="mailContact" placeholder="Votre adresse email">
+                <input type="email" class="form-control mailForm" id="mailContact" placeholder="Votre adresse email">
                 <span class="mailFalse"></span>
               </div>
               <div class="form-group col-12">
                 <label for="txtContact">Votre message</label>
                 <textarea class="form-control" id="txtContact" placeholder="Texte libre"></textarea>
-                <span class="txtFalse"></span>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="button closeWin" data-dismiss="modal">Fermer</button>
-            <button type="submit" class="button">Envoyer</button>
+            <button type="button" class="button" data-dismiss="modal">Fermer</button>
+            <button type="submit" class="button">Inscription</button>
           </div>
         </div>
       </div>
@@ -285,7 +293,7 @@
 
 
     <!-- Grid container -->
-    <div  class="justify-content-between container-fluid">
+    <div class="justify-content-between container-fluid">
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
@@ -403,8 +411,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+
   <script src="assets/js/script.js"></script>
 </body>
 
